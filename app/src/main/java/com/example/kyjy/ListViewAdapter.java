@@ -46,6 +46,8 @@ public class ListViewAdapter  extends BaseAdapter {
             TextView textView1 = (TextView) convertView.findViewById(R.id.text1) ;
             TextView textView2 = (TextView) convertView.findViewById(R.id.text2) ;
 
+            //test
+
             // Data Set(listViewItemList)에서 position에 위치한 데이터 참조 획득
             ListViewItem listViewItem = listViewItems.get(position);
 
