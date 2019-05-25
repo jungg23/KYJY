@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/customView"
+    >
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_centerVertical="true"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/pills"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/image"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@id/image"
+        android:padding="2dp"
+        android:text="비타민"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/cycle"
+        android:text="매일"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/name"
+        android:layout_alignLeft="@id/name"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/when"
+        android:text="식후"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/cycle"
+        android:layout_below="@id/name"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/times"
+        android:text="1번"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_toRightOf="@id/when"
+        android:layout_below="@id/name"
+        android:padding="5dp"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:padding="15dp"
+        android:text="PM01:00"
+        android:textSize="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/modifybtn"
+        />
+
+
+
+    <Button
+        android:id="@+id/modifybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="복용안함"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@android:drawable/btn_default_small"
+        />
+
+
+
+
+</RelativeLayout>
