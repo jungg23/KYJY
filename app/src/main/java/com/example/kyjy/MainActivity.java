@@ -13,6 +13,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -47,6 +48,23 @@ public class MainActivity extends AppCompatActivity  {
         });
 
 
+        // 커스텀 다이얼로그에서 입력한 메시지를 출력할 TextView 를 준비한다.
+        final TextView main_label = (TextView) findViewById(R.id.main_label);
+
+        // 커스텀 다이얼로그를 호출할 버튼을 정의한다.
+        FloatingActionButton fab_security = (FloatingActionButton)findViewById(R.id.fab_security);
+
+        fab_security.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // 커스텀 다이얼로그를 생성한다. 사용자가 만든 클래스이다.
+                CustomDialog customDialog = new CustomDialog(MainActivity.this);
+
+                // 커스텀 다이얼로그를 호출한다.
+                // 커스텀 다이얼로그의 결과를 출력할 TextView를 매개변수로 같이 넘겨준다.
+                customDialog.callFunction(main_label);
+            }
+        });
     }
 
     @Override
