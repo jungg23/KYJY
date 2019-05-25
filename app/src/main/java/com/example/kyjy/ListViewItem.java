@@ -3,27 +3,58 @@ package com.example.kyjy;
 import android.graphics.drawable.Drawable;
 
 public class ListViewItem {
-    private Drawable iconDrawable ;
-    private String str1 ;
-    private String str2 ;
+    private Drawable image;
+    private String name;
+    private String cycle;
+    private String when;
+    private String times;
+    private String time;
 
-    public void setIcon(Drawable icon) {
-        iconDrawable = icon ;
+    public void setImage(Drawable image) {
+        this.image = image;
     }
-    public void setStr1(String str) {
-        str1 = str ;
+    public void setName(String name) {
+        this.name = name;
     }
-    public void setStr2(String str) {
-        str2 = str ;
+    public void setCycle(String cycle) {
+        this.cycle = cycle;
     }
 
-    public Drawable getIcon() {
-        return this.iconDrawable ;
+    public void setWhen(String when) {
+        this.when = when;
     }
-    public String getStr1() {
-        return this.str1 ;
+
+    public void setTimes(String times) {
+        this.times = times;
     }
-    public String getStr2() {
-        return this.str2;
+
+    public void setTime(String Time) {
+        this.time = time;
+    }
+
+
+
+    public Drawable getImage() {
+        return this.image;
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public String getCycle() {
+        return this.cycle;
+    }
+
+    public String getWhen() {
+        return this.when;
+    }
+
+    public String getTimes() {
+        return this.times;
+    }
+
+    public String getTime() {
+        return this.time;
     }
 }
