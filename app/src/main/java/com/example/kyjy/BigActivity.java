@@ -1,0 +1,13 @@
+package com.example.kyjy;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class BigActivity extends Activity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_big);
+    }
+}
