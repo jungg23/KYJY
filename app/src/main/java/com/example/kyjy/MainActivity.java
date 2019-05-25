@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -75,19 +76,38 @@ public class MainActivity extends AppCompatActivity  {
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
+    public boolean onOptionsItemSelected(MenuItem item){
         int id = item.getItemId();
+        //or switch문을 이용하면 될듯 하다.
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.ex) {
-
-            Intent intent = new Intent(MainActivity.this,BigActivity.class);
-            startActivity(intent);
+        if (id == R.id.action_authority) {
+            Toast.makeText(this, "권한 설정", Toast.LENGTH_SHORT).show();
+            Intent Intent = new Intent(this, Password.class); //클래스명 바꾸기
+            startActivity(Intent);
             return true;
         }
+
+        else if (id == R.id.action_password) {
+            Toast.makeText(this, "비밀번호 설정", Toast.LENGTH_SHORT).show();
+            Intent Intent = new Intent(this, Password.class);
+            startActivity(Intent);
+            return true;
+        }
+
+        else if (id == R.id.action_logout) {
+            Toast.makeText(this, "로그아웃", Toast.LENGTH_SHORT).show();
+            Intent Intent = new Intent(this, Password.class); //클래스명 바꾸기
+            startActivity(Intent);
+            return true;
+        }
+
+        else if (id == R.id.ex) {
+            Toast.makeText(this, "혜령언니 테스트", Toast.LENGTH_SHORT).show();
+            Intent Intent = new Intent(this, Password.class); //클래스명 바꾸기
+            startActivity(Intent);
+            return true;
+        }
+
 
         return super.onOptionsItemSelected(item);
     }
