@@ -32,6 +32,7 @@ public class ListViewAdapter  extends BaseAdapter {
 
             //hello android
             //goodbye android
+            //test2
 
             // "listview_item" Layout을 inflate하여 convertView 참조 획득.
             if (convertView == null) {
