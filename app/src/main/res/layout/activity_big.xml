@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView"
+        android:src = "@drawable/medicine"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="혈압약"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/cb_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="0dp"
+        android:layout_maginLeft="30dp"
+        android:focusable="false"
+        android:clickable="false"/>
+
+
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:src = "@drawable/medicine"/>
+
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="비타민"
+        android:id="@+id/textView2"
+        android:textSize="30dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_checkbox2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="0dp"
+        android:layout_maginLeft="30dp"
+        android:focusable="false"
+        android:clickable="false"/>
+
+</LinearLayout>
