@@ -33,6 +33,7 @@ public class ListViewAdapter  extends BaseAdapter {
             //hello android
             //goodbye android
             //test2
+            //test3
 
             // "listview_item" Layout을 inflate하여 convertView 참조 획득.
             if (convertView == null) {
@@ -49,9 +50,9 @@ public class ListViewAdapter  extends BaseAdapter {
             ListViewItem listViewItem = listViewItems.get(position);
 
             // 아이템 내 각 위젯에 데이터 반영
-            iconImageView.setImageDrawable(listViewItem.getIcon());
-            textView1.setText(listViewItem.getStr1());
-            textView2.setText(listViewItem.getStr2());
+            //iconImageView.setImageDrawable(listViewItem.getIcon());
+            //textView1.setText(listViewItem.getStr1());
+            //textView2.setText(listViewItem.getStr2());
 
             return convertView;
         }
@@ -73,9 +74,9 @@ public class ListViewAdapter  extends BaseAdapter {
         public void addItem(Drawable icon, String str1, String str2) {
             ListViewItem item = new ListViewItem();
 
-            item.setIcon(icon);
-            item.setStr1(str1);
-            item.setStr2(str2);
+            //item.setIcon(icon);
+            //item.setStr1(str1);
+            //item.setStr2(str2);
 
             listViewItems.add(item);
         }
