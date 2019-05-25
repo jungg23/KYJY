@@ -28,7 +28,7 @@ public class ListViewItem {
         this.times = times;
     }
 
-    public void setTime(String Time) {
+    public void setTime(String time) {
         this.time = time;
     }
 
