@@ -49,7 +49,6 @@ public class ListViewAdapter  extends BaseAdapter {
             textView2.setText(listViewItem.getStr2());
 
             return convertView;
-            //commit test
         }
 
 
