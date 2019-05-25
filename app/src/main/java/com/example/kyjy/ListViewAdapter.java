@@ -28,12 +28,6 @@ public class ListViewAdapter  extends BaseAdapter {
         public View getView(int position, View convertView, ViewGroup parent) {
             final int pos = position;
             final Context context = parent.getContext();
-            //test
-
-            //hello android
-            //goodbye android
-            //test2
-            //test3
 
             // "listview_item" Layout을 inflate하여 convertView 참조 획득.
             if (convertView == null) {
@@ -42,17 +36,24 @@ public class ListViewAdapter  extends BaseAdapter {
             }
 
             // 화면에 표시될 View(Layout이 inflate된)으로부터 위젯에 대한 참조 획득
-            ImageView iconImageView = (ImageView) convertView.findViewById(R.id.imageView) ;
-            TextView textView1 = (TextView) convertView.findViewById(R.id.text1) ;
-            TextView textView2 = (TextView) convertView.findViewById(R.id.text2) ;
+            ImageView ImageView = (ImageView) convertView.findViewById(R.id.image);
+            TextView name = (TextView) convertView.findViewById(R.id.name);
+            TextView cycle = (TextView) convertView.findViewById(R.id.cycle);
+            TextView when = (TextView) convertView.findViewById(R.id.when);
+            TextView times = (TextView) convertView.findViewById(R.id.times);
+            TextView time = (TextView) convertView.findViewById(R.id.time);
+
 
             // Data Set(listViewItemList)에서 position에 위치한 데이터 참조 획득
             ListViewItem listViewItem = listViewItems.get(position);
 
             // 아이템 내 각 위젯에 데이터 반영
-            //iconImageView.setImageDrawable(listViewItem.getIcon());
-            //textView1.setText(listViewItem.getStr1());
-            //textView2.setText(listViewItem.getStr2());
+            ImageView.setImageDrawable(listViewItem.getImage());
+            name.setText(listViewItem.getName());
+            cycle.setText(listViewItem.getCycle());
+            when.setText(listViewItem.getWhen());
+            times.setText(listViewItem.getTimes());
+            time.setText(listViewItem.getTime());
 
             return convertView;
         }
@@ -71,12 +72,15 @@ public class ListViewAdapter  extends BaseAdapter {
         }
 
         // 아이템 데이터 추가를 위한 함수. 개발자가 원하는대로 작성 가능.
-        public void addItem(Drawable icon, String str1, String str2) {
+        public void addItem(Drawable image, String name, String cycle, String when, String times, String time) {
             ListViewItem item = new ListViewItem();
 
-            //item.setIcon(icon);
-            //item.setStr1(str1);
-            //item.setStr2(str2);
+            item.setImage(image);
+            item.setName(name);
+            item.setCycle(cycle);
+            item.setWhen(when);
+            item.setTimes(times);
+            item.setTime(time);
 
             listViewItems.add(item);
         }

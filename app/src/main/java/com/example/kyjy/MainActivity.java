@@ -28,19 +28,10 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 1 ", "str2 : 1") ;
+                "비타민", "매일","식후", "1번", "PM01:00") ;
         adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 2", "str2 : 2") ;
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 3", "str2 : 3") ;
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 4", "str2 : 4") ;
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 5", "str2 : 5") ;
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 6", "str2 : 6") ;
-        adapter.addItem(ContextCompat.getDrawable(this, R.drawable.ic_launcher_background),
-                "str1 : 7", "str2 : 7") ;
+                "피임약", "매일","식후", "1번", "AM10:00") ;
+
 
 
         FloatingActionButton fab = findViewById(R.id.fab);
